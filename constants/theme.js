@@ -24,7 +24,8 @@ export const GAME_CONFIG = {
 
 // API Configuration
 export const API_CONFIG = {
-  baseURL: 'http://localhost:8080/api',
+  // Lee la variable de entorno, si no existe usa localhost
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080/api',
   endpoints: {
     question: '/game/question',
     validate: '/game/validate',
