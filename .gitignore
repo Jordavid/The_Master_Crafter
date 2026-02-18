@@ -1,0 +1,17 @@
+# Frontend
+node_modules/
+dist/
+.env
+.env.local
+.env.production
+
+# Backend
+target/
+*.jar
+*.class
+.mvn/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
